@@ -22,7 +22,7 @@ __these examples include backup__
 
 Update `foo.v8`'s Lua code with `foo.lua`:
 
-`cp foo.lua foo.backup.lua && lua ./png2pico.lua foo.lua foo.backup.v8 > foo.v8`
+`cp foo.lua foo.backup.lua && luajit ./png2pico.lua foo.lua foo.backup.v8 > foo.v8`
 
 Update `foo.v8`'s spritesheet gfx with `foo.png`:
 
