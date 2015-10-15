@@ -1,6 +1,6 @@
 #PICO-8 UTILS
 
-This is a set of utilities made for the `.p8` [PICO-8](http://www.lexaloffle.com/pico-8.php) file format.
+This is a set of utilities made for the 0.1.2 `.p8` [PICO-8](http://www.lexaloffle.com/pico-8.php) file format.
 
 They were written against Lua 5.3, but will most likely run correctly against Lua 5.x.
 
