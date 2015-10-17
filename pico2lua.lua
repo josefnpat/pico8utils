@@ -8,7 +8,13 @@ if not arg[1] then
 
 else
 
-  local file = io.open(arg[1])
+  local file
+  
+  if arg[1] == '-' then
+    file = io.stdin
+  else
+    file = io.open(arg[1])
+  end
 
   local found_lua = false
   local section_header = false

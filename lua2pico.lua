@@ -8,7 +8,14 @@ if not arg[1] or not arg[2] then
 
 else
 
-  local lua_file = io.open(arg[1])
+  local lua_file
+  
+  if arg[1] == '-' then
+    lua_file = io.stdin
+  else
+    lua_file = io.open(arg[1])
+  end
+
   local target_file = io.open(arg[2])
 
   local found_lua = false
