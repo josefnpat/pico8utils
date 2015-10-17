@@ -12,20 +12,20 @@ For `pack.lua`, you need to have lfs installed (`luarocks install luafilesystem`
 
 ##Example usage:
 
-Extract `foo.v8`'s Lua code from `foo.v8`:
+Extract `foo.p8`'s Lua code from `foo.p8`:
 
-`lua ./pico2lua.lua foo.v8 > foo.lua`
+`lua ./pico2lua.lua foo.p8 > foo.lua`
 
-Extract `foo.v8`'s gfx as a png from `foo.v8`:
+Extract `foo.p8`'s gfx as a png from `foo.p8`:
 
-`lua ./pico2png.lua foo.v8 > foo.png`
+`lua ./pico2png.lua foo.p8 > foo.png`
 
 __these examples include backup__
 
-Update `foo.v8`'s Lua code with `foo.lua`:
+Update `foo.p8`'s Lua code with `foo.lua`:
 
-`cp foo.lua foo.backup.lua && lua ./png2pico.lua foo.lua foo.backup.v8 > foo.v8`
+`cp foo.lua foo.backup.lua && luajit ./png2pico.lua foo.lua foo.backup.p8 > foo.p8`
 
-Update `foo.v8`'s spritesheet gfx with `foo.png`:
+Update `foo.p8`'s spritesheet gfx with `foo.png`:
 
-`cp foo.v8 foo.backup.v8 && luajit ./png2pico.lua foo.png foo.backup.v8 > foo.v8`
+`cp foo.p8 foo.backup.p8 && luajit ./png2pico.lua foo.png foo.backup.p8 > foo.p8`
