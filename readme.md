@@ -6,7 +6,9 @@ They were written against Lua 5.3, but will most likely run correctly against Lu
 
 All of these scripts were made with the unix philosophy.
 
-For `pico2png.lua` and `png2pico.lua`, you need to use luajit and have imagemagick installed.
+For `pico2png.lua` and `png2pico.lua`, you need to use luajit, magick (`luarocks install magick`) and have imagemagick installed.
+
+For `pack.lua`, you need to have lfs installed (`luarocks install luafilesystem`)
 
 ##Example usage:
 
