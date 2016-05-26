@@ -29,3 +29,28 @@ Update `foo.p8`'s Lua code with `foo.lua`:
 Update `foo.p8`'s spritesheet gfx with `foo.png`:
 
 `cp foo.p8 foo.backup.p8 && luajit ./png2pico.lua foo.png foo.backup.p8 > foo.p8`
+
+##Dependencies
+
+While some of these scripts can use any `5.x` version of `lua`, the ones dependent on `magick` requires `luajit` (which is the drop in for `5.1`).
+
+If you have instructions for an OS that is not listed here, please open an issue with instructions or make a pull request.
+
+### Linux (Arch)
+
+```
+sudo pacman -S lua51 luajit luarocks5.1
+sudo luarocks-5.1 install magick
+luarocks-5.1 list
+cd /path/to/repo
+```
+
+### OS X
+
+```bash
+brew install lua51
+brew install luajit
+luarocks-5.1 install magick
+luarocks-5.1 install luafilesystem
+cd /path/to/repo
+```
