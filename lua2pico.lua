@@ -2,7 +2,7 @@
 
 if not arg[1] or not arg[2] then
 
-  print("Usage:\tpico2lua.lua [FILE.lua] [TARGET.p8]")
+  print("Usage:\tlua2pico.lua [FILE.lua] [TARGET.p8]")
   print("Replaces the __lua__ section of the TARGET with the contents of FILE and then\nprints it to stdout.")
   print("e.g.: ./lua2pico.lua code.lua cart.p8 > new_cart.p8")
 
