@@ -1,4 +1,4 @@
-#PICO-8 UTILS
+# PICO-8 UTILS
 
 This is a set of utilities made for the 0.1.2 `.p8` [PICO-8](http://www.lexaloffle.com/pico-8.php) file format.
 
@@ -10,7 +10,7 @@ For `pico2png.lua` and `png2pico.lua`, you need to use luajit, magick (`luarocks
 
 For `pack.lua`, you need to have lfs installed (`luarocks install luafilesystem`)
 
-##Example usage:
+## Example usage:
 
 Extract `foo.p8`'s Lua code from `foo.p8`:
 
@@ -30,7 +30,7 @@ Update `foo.p8`'s spritesheet gfx with `foo.png`:
 
 `cp foo.p8 foo.backup.p8 && luajit ./png2pico.lua foo.png foo.backup.p8 > foo.p8`
 
-##Dependencies
+## Dependencies
 
 While some of these scripts can use any `5.x` version of `lua`, the ones dependent on `magick` requires `luajit` (which is the drop in for `5.1`).
 
